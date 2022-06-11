@@ -2,50 +2,24 @@
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		BST bst = new BST();
+	Cqueue q1 = new Cqueue();
 		
-		bst.insert(23);
-		bst.insert(12);
-		bst.insert(3);
-		bst.insert(89);
-		bst.insert(90);
-		bst.insert(67);
-		bst.insert(35);
-		bst.insert(39);
-		bst.insert(34);
-		bst.insert(27);
-		bst.insert(19);
-		bst.insert(25);
-		//bst.printT();
-		//System.out.println(bst);
+		q1.insert(100);
+		q1.insert(300);
+		//q1.remove();
 		
-		System.out.println("..............PreOrder..........");
-
-		bst.preOrder();
-		System.out.println();
-		System.out.println("..............Inorder..........");
-		
-		bst.InOrder();
-		System.out.println();
-		System.out.println("..............PostOrder..........");
-		bst.postOrder();
-		System.out.println();
-		System.out.println(".........Largest and smallest.....");
-		bst.print_largest();
-		bst.print_secondLargest();
-		
-		bst.print_smallest();
-		bst.print_secondsmallest();
-	
-		bst.delete(12);
-		bst.InOrder();
-		System.out.println();
-		bst.delete(46);
-		bst.InOrder();
-		
-		bst.print_H();
+		q1.insert(700);
+		q1.insert(800);
+		q1.insert(900);
+		q1.insert(200);
+		System.out.println(q1);
+	/*	
+		Cqueue q2 = new Cqueue();
+		q2.insert(1000);
+		q2.insert(5000);
+		q2.insert(3);
+		q2.insert(4);
+		System.out.println(q2);
+		*/
 	}
-
 }
